@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* font-size: 18px; */
+}
+#wrapper{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(77, 24, 125) ,rgb(41, 15, 67));
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color:white;
+
+}
+.first{
+    width:20%;
+    color:white;
+}
+.heading{
+    color:white;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.first-box{
+    height:36px;
+    border-radius: 7px;
+    display:grid;
+    grid-template-columns: 90% 10%;
+    margin-bottom:12px;
+    position:relative;
+}
+.passwordDisplay{
+    outline:none;
+    letter-spacing: 1.5px;
+    color:rgb(215, 237, 118);
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #1b0707;
+    padding-left:15px;
+    box-shadow: none;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.fa-copy{
+    padding:10px;
+    color:rgb(197, 223, 246);
+    background-color: #1b0707;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-size: 14px;
+}
+.copy-text{
+    position:absolute;
+    right:-10px;
+    top:-25px;
+    font-size:12px;
+    background-color: rgba(221, 246, 112, 0.748);
+    border-radius: 30%;
+    color:#1b0707;
+    padding:5px;
+    scale:0;
+}
+.active{
+    scale:1;
+}
+.second-box{
+    border-radius: 7px;
+    background-color: #1b0707;
+    width:100%;
+    padding:15px;
+
+}
+.p-length-section{
+    display:flex;
+    justify-content: space-between; 
+}
+.range-slider{
+    width:100%;
+    margin:20px 0;
+}
+.cbs{
+    padding:3px 0;
+}
+.strength-section{
+    margin:10px 0 13px;
+    display:flex;
+    justify-content:space-between;
+}
+.circle{
+    width:11px;
+    height:11px;
+    border-radius:50%;
+    background-color:gray;
+    box-shadow: 0px 0px 2px 2px rgb(128, 128, 128, 0.8);
+}
+.generateBtn{   
+    width:100%;
+    height:32px;
+    background-color: rgb(193, 91, 230);
+    border-radius: 7px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color:rgb(215, 237, 118);
+    box-shadow: 0 3px;
+}
+.len{
+    color:rgb(215, 237, 118);   
+}

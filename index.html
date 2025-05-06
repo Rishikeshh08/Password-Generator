@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="wrapper">
+        <div class="first">
+            <p class="heading">PASSWORD GENERATOR</p>
+            
+            <div class="first-box">
+                <input type="text" placeholder="PASSWORD" class="passwordDisplay" readonly>
+                <i class="fa-solid fa-copy"></i>
+                <div class="copy-text"></div>
+            </div>
+
+            <div class="second-box">
+                <div class="p-length-section">
+                    <span class="shead">Password Length</span>
+                    <span class="shead len" data-length-number>10</span>
+                </div>
+                
+                <input type="range" class="range-slider" min="1" max="20" value="10">
+
+                <div class="cbs">
+                    <input type="checkbox" class="cb" id="cb1" checked>
+                    <label for="cb1">Include Uppercase Letters</label>
+                </div>
+                <div class="cbs">
+                    <input type="checkbox" class="cb" id="cb2">
+                    <label for="cb2">Include Lowercase Letters</label>
+                </div>
+                <div class="cbs">
+                    <input type="checkbox" class="cb" id="cb3">
+                    <label for="cb3">Include Numbers</label>
+                </div>
+                <div class="cbs">
+                    <input type="checkbox" class="cb" id="cb4">
+                    <label for="cb4">Include Symbols</label>
+                </div>
+
+                <div class="strength-section">
+                    <span class="shead">Strength</span>
+                    <div class="circle"></div>
+                </div>
+                
+                <button class="generateBtn" onclick="generatePassword()">Generate Butoon</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
